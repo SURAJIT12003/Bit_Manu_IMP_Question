@@ -1,0 +1,2 @@
+# Bit_Manu_IMP_Question
+Here add all important BIT MANUPULATION QUESTION AND BIT'S IMPORTANT RULE
