@@ -21,7 +21,8 @@ public class BIT_MANU {
         // }
         // return false;
     }
-  
+
+    //FROM RIGHT  TO LEFT  POSITION ***
     public static int getBit(int n,int i){  // index pass and get this index value of binary of this number 
       int t = 1<<i;
       if(t==0){
@@ -29,6 +30,23 @@ public class BIT_MANU {
       }
       return 1;
     }
+
+     //FROM LEFT TO RIGHT POSITION ***
+  public static int getBit2(int number, int position) {
+    // Check if the position is valid.
+    if (position < 1 || position > 32) {
+      return -1;
+    }
+
+    // Shift the number to the right by the position.
+    int shiftedNumber = number >> (position - 1);
+
+    // Get the least significant bit of the shifted number.
+    int bit = shiftedNumber & 1;
+
+    // Return the bit.
+    return bit;
+  }
 
     public static int setBit(int n,int i){  //set bit transfer bit to -  1 (if 0 then 1 or if  1 then 1 )
         int t = 1<<i;
